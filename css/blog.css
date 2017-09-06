@@ -1,0 +1,398 @@
+/* =============== Gallery ===================== */
+.snap-detail {
+    background: none repeat scroll 0 0 #fff;
+    bottom: 0;
+    left: 50%;
+    padding: 50px 35px;
+    position: absolute;
+}
+.snap {
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+.snap img {
+    width: 100%;
+}
+.snaps-gallery {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: -50px;
+}
+.snaps-gallery > div {
+    padding: 0;
+}
+.snap > div {
+    float: left;
+    width: 50%;
+}
+.gallery-img,
+.post-img {
+    overflow: hidden;
+    position: relative;
+}
+.gallery-img:before,
+.post-img:before {
+    background: none repeat scroll 0 0 #EC1E79;
+    content: "";
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.gallery-img:hover:before,
+.post-img:hover:before {
+    opacity: 0.9;
+}
+.gallery-img:after,
+.post-img:after {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    -webkit-transition:all 0.5s ease 0.2s;
+    -moz-transition:all 0.5s ease 0.2s;
+    -ms-transition:all 0.5s ease 0.2s;
+    -o-transition:all 0.5s ease 0.2s;
+    transition:all 0.5s ease 0.2s;
+}
+.gallery-img:hover:after,
+.post-img:hover:after{
+    top: -50%;
+    height: 200%;
+}
+.gallery-img > a,
+.post-img > a {
+    background: #FFF;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    margin-left: -25px;
+    margin-top: -25px;
+    text-align: center;
+    line-height: 50px;
+    color: #4F4F4F;
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    -webkit-transition:all 0.5s ease 0.2s;
+    -moz-transition:all 0.5s ease 0.2s;
+    -ms-transition:all 0.5s ease 0.2s;
+    -o-transition:all 0.5s ease 0.2s;
+    transition:all 0.5s ease 0.2s;
+}
+.gallery-img:hover > a,
+.post-img:hover > a{
+    opacity: 1;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.snap-detail > h4 {
+    float: left;
+    font-size: 16px;
+    margin-bottom: 12px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.snap-detail > p {
+    color: #5d5d5d;
+    float: left;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 100%;
+}
+.snap-detail a {
+    float: left;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-top: 12px;
+    width: 100%;
+    text-transform:uppercase;
+}
+.snap.style1 {
+    margin-top: 50px;
+}
+.snap.style2 > div {
+    float: right;
+}
+.snap.style2 > div.snap-detail {
+    left: 0;
+}
+
+
+/* =============== Blog Style ===================== */
+.blog.remove-ext {
+    margin-bottom: -50px;
+}
+.blog-post {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.post-img > img {
+    width: 100%;
+}
+.blog-post > strong {
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: roboto slab;
+    color: #666;
+}
+.blog-post > span {
+    color: #888888;
+    float: left;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.blog-post > span a{
+    color: inherit;
+
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.blog-post > h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.blog-post > h3 a{
+    color: inherit;
+
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -ms-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.blog-post-img,.video{
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+.video:before,
+.blog-post-img:before {
+    border-bottom: 1px solid #4f4f4f;
+    border-left: 1px solid #4f4f4f;
+    border-right: 1px solid #4f4f4f;
+    bottom: 0;
+    content: "";
+    height: 10px;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+}
+.post-img > img {
+    width: 100%;
+}
+.video:after,
+.blog-post-img:after {
+    background: none repeat scroll 0 0 #FBC103;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 10%;
+    width: 40%;
+}
+
+/* =============== Single Post Page ===================== */
+.single-post {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.single-img {
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.single-img img {
+    width: 100%;
+}
+.single-post h3 {
+    color: #505050;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.bar {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 3px;
+    display: table;
+    margin: 0 auto 40px;
+    padding: 10px 50px;
+    width: auto;
+}
+.bar .social {
+    margin-right: 90px;
+    margin-top: 5px;
+}
+.bar > span {
+    color: #888888;
+    font-family: arimo;
+    font-size: 12px;
+    margin-right: 50px;
+}
+.bar > span a {
+    color: inherit;
+}
+.bar > span:last-child {
+    margin: 0;
+}
+.single-post > p {
+    color: #5d5d5d;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+blockquote {
+    background: url("../images/parallax10.jpg") repeat 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #fff;
+    float: left;
+    font-family: roboto slab;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 30px 0;
+    overflow: hidden;
+    padding: 60px 170px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+blockquote:before {
+    background: none repeat scroll 0 0 black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.event-info {
+    background:url("../images/parallax9.jpg") repeat fixed 0 0 rgba(0, 0, 0, 0);
+    display:table;
+    margin:0 auto 50px;
+    position:relative;
+    width:100%;
+}
+.abt-event {
+    float: left;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.abt-event:before {
+    background: none repeat scroll 0 0 black;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.abt-event h4 {
+    float: left;
+    font-family: roboto slab;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.abt-event li {
+    color: #fff;
+    float: left;
+    font-family: arimo;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: left;
+    width: 50%;
+}
+.abt-event.org li {
+    width: 100%;
+}
+.abt-event:after {
+    background: none repeat scroll 0 0 #f0f0f0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 30px;
+}
+/*==================== responsive =========================*/
+@media (min-width:768px) and (max-width:980px){
+.snaps-gallery > div {padding: 0;float: left;width: 100%;}
+}
+
+@media (max-width:767px){
+.snaps-gallery > div {padding: 0;float: left;width: 100%;}
+}
+
+@media (max-width:1200px){
+.snaps-gallery > div {padding: 0 15px;}
+.snap > div {width: 100%;}
+.snap-detail {float: left;left: 0;position: relative;width: 100%;}
+}
+
+/*======================= responsive =====================*/
+
